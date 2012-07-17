@@ -16,10 +16,7 @@ def getUrl(keepGoing, http):
             http = str(input('Please Enter A Valid Url :'))
             if( 'http://' in http):
                 formattedWrong = False
-    
-    x = 'http://www.asrs.org/extranet/MeetingScheduler/ExportOvation/0'
-    y = 'http://www.asrs.org/extranet/MeetingScheduler/ExportPosters/0'
-    z = 'http://www.asrs.org/extranet/MeetingScheduler/ExportFilms/0'
+
     print('processing files')
     onlineScrape = urllib.request.urlopen(http);
     myfile = onlineScrape.readlines()
